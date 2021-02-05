@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Expresión Express</title>
+    <meta name="description" content="Juego de adivinar palabras a contrareloj.">
+    <meta name="author" content="Héctor Meleiro">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/animatebutton.js"></script>
+    <script src="js/countdown2.js"></script>
+    <script src="js/randomword.js"></script>
+    <script src="js/resettimer.js"></script>
+    <script src="js/navigation.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="menu">
+        <ol>
+            <li class="menu-item" onclick="GoHome()"><a href="#">Inicio</a></li>
+            <li class="menu-item">
+                <a href="#">Selecciona un paquete</a>
+                <ol class="sub-menu">
+                    <li class="menu-item" onclick="importwords(0)"><a href="#">Básico</a></li>
+                    <li class="menu-item" onclick="importwords(1)"><a href="#">Personajes históricos</a></li>
+                    <li class="menu-item" onclick="importwords(2)"><a href="#">RAE</a></li>
+                    <li class="menu-item" onclick="importwords(3)"><a href="#">Borges</a></li>
+                    <li class="menu-item" onclick="importwords(4)"><a href="#">El Quijote</a></li>
+                </ol>
+            </li>
+            <li class="menu-item" onclick="GoContact()"><a href="#">Más info</a></li>
+            <li id="fullscreen" class="menu-item" onclick="openFullscreen()"><a href="#">Pantalla completa</a></li>
+        </ol>
+    </nav>
+
+
+    <div id="inicio">
+        <h4>Esto es Expresión Exprés, un juego clásico de adivinar palabras a contrarreloj. Se juega en dos equipos posicionados en círculo, con los miembros de ambos equipos intercalados entre sí. El móvil es una patata caliente: hay un tiempo limitado en
+            cada ronda, el equipo que tenga el movil en la mano cuando el tiempo termina pierde, el equipo contrario gana un punto y puede ganar otro adicional si adivina la palabra. Para comenzar el juego haz clic en 'Selecciona un paquete' para elegir
+            un conjunto de palabras con las que jugar.</h4>
+    </div>
+
+
+    <div id="mainpanel" style="display: none">
+        <p id="timer" style="display: none"></p>
+        <button class="bubbly-button1" id="timer" onclick="updateTimer()">Temporizador</button>
+        <button class="bubbly-button1" id="timer" onclick="reset2()">Resetea</button>
+        <p id="word"></p>
+        <button class="bubbly-button2" id="nextword" onclick="randomword(words)">Siguiente palabra</button>
+
+    </div>
+
+    <div id="contacto" style="display: none">
+        <h4>Este juego está basado en un juego clásico ya descatalogado llamado <a href="https://www.google.com/search?q=expresion+express+MB+juego&tbm=isch&ved=2ahUKEwjv8LHP2-XqAhVCKxoKHQAcAkkQ2-cCegQIABAA&oq=expresion+express+MB+juego&gs_lcp=CgNpbWcQA1CQG1iZIGDSIWgAcAB4AIABUIgBnQOSAQE2mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=tLwaX-_GK8LWaIC4iMgE&bih=937&biw=1920&rlz=1C1CHBF_esES891ES891&hl=es"
+                target="_blank">Expresión Express</a>.</h4>
+        <h4>Esta web ha sido desarrollada por <a href="https://hmeleiro.github.io/" target="_blank"> Héctor Meleiro</a>.</h4>
+    </div>
+
+
+    <script>
+        /* Get the documentElement (<html>) to display the page in fullscreen */
+        var elem = document.documentElement;
+
+        /* View in fullscreen */
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+
+            document.getElementById("fullscreen").setAttribute("onclick", "closeFullscreen()");
+        }
+
+        /* Close fullscreen */
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+
+            document.getElementById("fullscreen").setAttribute("onclick", "openFullscreen()");
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

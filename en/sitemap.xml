@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/en/projects/</loc>
     <lastmod>2019-11-12T21:48:51-07:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="en"
                 href="/en/projects/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/</loc>
     <lastmod>2018-12-26T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -30,9 +27,7 @@
                 hreflang="en"
                 href="/en/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/</loc>
     <lastmod>2018-12-26T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -45,9 +40,7 @@
                 hreflang="en"
                 href="/en/post/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2018-12-26-vox-derecha-radical/</loc>
     <lastmod>2018-12-26T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -60,9 +53,7 @@
                 hreflang="en"
                 href="/en/post/2018-12-26-vox-derecha-radical/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2018-09-19-podemos-y-el-nudo-gordiano-de-la-izqu/</loc>
     <lastmod>2018-09-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -75,9 +66,7 @@
                 hreflang="en"
                 href="/en/post/2018-09-19-podemos-y-el-nudo-gordiano-de-la-izqu/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2017-11-02-alquilar-es-de-pobres-y-cada-vez-hay-/</loc>
     <lastmod>2017-11-02T21:49:57-07:00</lastmod>
     <xhtml:link
@@ -90,9 +79,7 @@
                 hreflang="en"
                 href="/en/post/2017-11-02-alquilar-es-de-pobres-y-cada-vez-hay-/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2017-06-30-145/</loc>
     <lastmod>2017-06-30T21:49:57-07:00</lastmod>
     <xhtml:link
@@ -105,9 +92,7 @@
                 hreflang="en"
                 href="/en/post/2017-06-30-145/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2017-06-30-las-cuatro-espanas-y-la-casita-en-la-/</loc>
     <lastmod>2017-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -120,9 +105,7 @@
                 hreflang="en"
                 href="/en/post/2017-06-30-las-cuatro-espanas-y-la-casita-en-la-/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/about/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
     <xhtml:link
@@ -135,9 +118,7 @@
                 hreflang="en"
                 href="/en/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2016-04-12-juventud-sin-futuro-5-anos-de-transve/</loc>
     <lastmod>2016-04-12T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -150,9 +131,7 @@
                 hreflang="en"
                 href="/en/post/2016-04-12-juventud-sin-futuro-5-anos-de-transve/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2016-03-01-en-bruselas-nos-estan-esperando/</loc>
     <lastmod>2016-03-01T21:49:57-07:00</lastmod>
     <xhtml:link
@@ -165,9 +144,7 @@
                 hreflang="en"
                 href="/en/post/2016-03-01-en-bruselas-nos-estan-esperando/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/post/2016-02-22-rita-se-fuerte/</loc>
     <lastmod>2016-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -180,9 +157,7 @@
                 hreflang="en"
                 href="/en/post/2016-02-22-rita-se-fuerte/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -194,9 +169,7 @@
                 hreflang="en"
                 href="/en/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -208,9 +181,7 @@
                 hreflang="en"
                 href="/en/contact/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -222,9 +193,7 @@
                 hreflang="en"
                 href="/en/series/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -237,5 +206,4 @@
                 href="/en/tags/"
                 />
   </url>
-  
 </urlset>

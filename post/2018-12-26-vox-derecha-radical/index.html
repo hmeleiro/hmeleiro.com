@@ -7,7 +7,7 @@
 
     <meta name="author" content="Héctor Meleiro">
     <meta name="description" content="/">
-    <meta name="keywords" content="datos,codigo,encuestas">
+    <meta name="keywords" content="datos,codigo,encuestas,R,SQL,mongodb">
 
     <meta property="og:site_name" content="Héctor Meleiro">
     <meta property="og:title" content="
@@ -46,7 +46,7 @@
       <link href="/index.xml" rel="feed" type="application/rss+xml" title="Héctor Meleiro" />
     
 
-    <meta name="generator" content="Hugo 0.78.2" />
+    <meta name="generator" content="Hugo 0.100.1" />
   </head>
 
   <body class="">
@@ -117,20 +117,24 @@
       <h1>Vox, nueva derecha populista o escisión radical del PP</h1>
     </header>
 
-    <p><!-- raw HTML omitted -->Publicado originalmente en <!-- raw HTML omitted -->ElDiario.es<!-- raw HTML omitted -->.</p>
+    <p><em>Publicado originalmente en <a href="https://www.eldiario.es/piedrasdepapel/Vox-derecha-populista-escision-PP_6_850474947.html" target="_blank" rel="noopener">ElDiario.es</a>.</p>
 <p>Comencemos por un ejercicio de ‘econometría‑ficción’. Si el modelo explicativo de quiénes (y por qué) votan a Vox en Andalucía es el correcto, este sería el resultado probable de Vox en la Comunidad de Madrid en las próximas elecciones autonómicas: 380.000 votos (un 8% del censo aproximadamente) distribuidos de una forma muy parecida a los del PP.</p>
 <p>A continuación les intentaré convencer de que el modelo es, posiblemente, correcto y de que esto tal vez no sea ciencia ficción.</p>
 <p><img src="/images/vox.png" alt="Pronostico Vox para la Comunidad de Madrid"></p>
 <p>Pues efectivamente ya está aquí. Ya no somos una excepción en Europa. Quizás nunca lo hemos sido y sencillamente llegamos tarde a todo. Llegamos tarde a la democracia, al estado del bienestar y, por qué no, al auge de partidos de extrema derecha. Pero, ¿es Vox un partido de extrema derecha populista homologable al resto de sus contrapartes europeas?</p>
 <p>La teoría más interesante, y seguramente la que mejor explica lo novedoso de estos partidos, es la que sugiere que la nueva derecha populista le disputa las bases electorales tanto a los partidos de derecha como a los de izquierda. Por un lado, estos partidos atraerían a autónomos y pequeños empresarios (votantes históricos de partidos de la derecha tradicional), y por el otro, a trabajadores poco cualificados afectados por los shocks de la globalización y preocupados por los flujos migratorios (votantes que tradicionalmente habrían optado por partidos de izquierda). Esta idea es de gran importancia porque supone un realineamiento electoral de los grupos sociales que rompería con el eje ideológico izquierda‑derecha, algo que ni siquiera Podemos (que hizo explícito desde un primer momento este objetivo) ha conseguido de forma satisfactoria. Por lo tanto, ¿representa Vox esta transformación o es sencillamente una escisión más de ese bloque de mármol que ha sido históricamente el electorado del Partido Popular?</p>
-<!-- raw HTML omitted -->
+<h5>La extrema derecha y las encuestas</h5>
+Diversas encuestadoras han tratado de responder a esta pregunta. Sigma Dos publicó una primera  encuesta en la que llegaba a decir que hasta el 15% de los votantes andaluces de Vox había votado en 2015 a partidos de izquierda. Días después, 40db redujo esa cifra hasta el 7%.
 <p>Es razonable pensar que, de la misma forma que las encuestas preelectorales no detectaron el terremoto, ahora tengan dificultad en percibir correctamente el origen y el perfil sociodemográfico de los votantes de Vox. Es probable que, tras unas elecciones en las que Vox ha sido el vencedor moral, muchos más encuestados estén dispuestos a declarar que votaron por un partido de extrema derecha y que, por lo tanto, esta tarea sea más fácil. Pero a la vista de datos tan dispares como los publicados hasta ahora se hace difícil saber hasta qué punto Vox ha convencido a votantes que hasta ahora optaban por partidos de izquierda.</p>
 <p>Para saberlo, y ante la ausencia de encuestas disponibles, podemos recurrir a datos agregados a nivel de sección censal. Las secciones censales son unidades territoriales que albergan entre 700 y 2.000 votantes, el nivel de mayor desagregación posible para reducir al mínimo los riesgos de la llamada falacia ecológica. De estas unidades tenemos más información, a parte de los resultados electorales, con la que se puede construir un modelo estadístico para conocer qué variables están más asociadas al voto a Vox.</p>
-<!-- raw HTML omitted -->
+<h5>La inmigración, desde el barrio de al lado</h5>
+En la encuesta de 40db antes mencionada, también se preguntaba a los votantes de Vox por las razones que les habían llevado a apoyar a este partido. Tres razones destacaban: por su discurso sobre la inmigración (41,6% de los encuestados lo mencionaban), para echar al PSOE del poder (34,2%) y porque defiende la unidad de España (33,7%). Inmigración, contestación anti-establishment por la derecha y defensa de la identidad nacional son sin duda tres características que les homologan a nivel europeo con los partidos de la nueva extrema derecha europea. Las fuertes apelaciones a la unidad nacional y el discurso anti-inmigración suelen plantearse como explicaciones razonables para que estos partidos acaben resultando atractivos a trabajadores poco cualificados que vienen de haber votado a la izquierda. Si esto estuviese ocurriendo, lo que debería verse es que Vox obtiene mejores resultados en aquellos lugares donde hay una mayor concentración de extranjeros, zonas que a su vez coincidirían con los lugares de rentas bajas (y mayor voto a la izquierda) donde presumiblemente vivirían esos trabajadores poco cualificados.
 <p>Respecto a la inmigración, hay análisis que han detectado una relación positiva entre porcentaje de extranjeros y voto a Vox a nivel de municipio: en Andalucía, el voto a Vox aumenta en los municipios con mayor porcentaje de extranjeros. Sin embargo, el mismo análisis llevado a cabo a nivel de sección censal no arroja una relación tan clara. Si además controlamos por el promedio de la tasa de inmigrantes de las secciones censales que rodean a cada sección censal, el modelo nos indica que lo que más se asocia con el voto a Vox no es tanto la presencia elevada de extranjeros sino su presencia elevada en zonas colindantes. Esta relación se ve además modulada por el tipo de municipio del que se trate: mientras que en las zonas rurales esta asociación positiva entre concentración de extranjeros y voto a Vox sí es más fuerte, en las ciudades la asociación se invierte. Por resumir: los datos sugieren que Vox se le ha votado más en los municipios donde hay más migrantes, pero en las secciones censales donde hay menos y que, a su vez, están cerca de otras secciones censales donde sí residen muchas personas migrantes.</p>
 <p>Esto significa que el votante de Vox, por lo general, no convive directamente con la inmigración, sino que la ve “desde la otra acera”. Esto es especialmente patente en ciudades como Sevilla, pero también es cierto en municipios como El Ejido o Algeciras. En estos dos últimos municipios, Vox no obtiene resultados malos en donde más extranjeros hay, pero sus mejores cifras se concentran allá donde hay menos. Este indicio está en línea con la hipótesis del contacto ( contact hypothesis), que plantea que el contacto intergrupos tiende a disminuir los prejuicios del grupo mayoritario hacia el minoritario. Esto no significa que el fenómeno de la inmigración no sea un factor importante para explicar el voto a Vox. Más bien sugiere que no es la mera existencia de población migrante la que genera un voto anti inmigración, sino la movilización de un voto “preventivo” por parte de determinadas élites, modulado por acontecimientos que no hace falta vivirlos de cerca, sino que pueden estar mediados través de la televisión, la radio, los periódicos o internet. En este sentido, el aumento relativo del flujo migratorio por la vía occidental en detrimento de la de los Balcanes o la crisis del Aquarius han podido tener una importancia crucial para dotar de centralidad a un tema que Vox está consiguiendo monopolizar de forma exitosa. No es que los españoles nos hayamos vuelto más racistas en pocos meses, sino que Vox ha conseguido politizar el fenómeno de la inmigración atrayendo a aquellos individuos que ya tenían actitudes contrarias a la inmigración y aprovechando una oportunidad política brindada por los acontecimientos.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h5>No es el paro, sino su aumento.</h5>
+Con este tipo de análisis también podemos ver que el voto a Vox no es mayor en los municipios donde más paro hay, sino donde más ha aumentado respecto a antes de la crisis. Esto conectaría con las explicaciones basadas en las teorías sobre la privación relativa. La privación relativa es la idea de que el grupo al que el individuo pertenece no está recibiendo aquello a lo que cree tener derecho, en comparación a otros grupos o en comparación al pasado. Esta asociación positiva del voto a Vox con el aumento del paro es aún más intensa en el caso del paro masculino. Aquí los datos podrían estar constatando el sesgo masculino del voto de Vox. Sin embargo, puesto que el dato empleado de paro registrado es a nivel de municipio (no de sección censal), es difícil saber si son aquellas personas que han quedado desempleadas desde la crisis las que están votando a Vox o personas más acomodadas que viven en localidades donde el shock de la crisis se dejado notar en mayor medida. La asociación negativa entre voto a Vox y porcentaje de viviendas en alquiler (este dato sí es a nivel de sección censal pero de 2011) puede estar indicando lo segundo. El alquiler en nuestro país ha sido siempre una forma de acceso a la vivienda asociada a las clases insolventes, por lo que si en un municipio ha crecido el paro es posible que haya crecido más en aquellas zonas del municipio donde hay una mayor concentración de viviendas en alquiler.
+<h5>Vox: escisión radical del PP</h5>
+Para concluir, parece que Vox crece más en zonas donde PP y Ciudadanos obtuvieron mejores resultados en 2015, y donde los de PSOE y Podemos fueron peores. No creo imposible que esto pueda llegar a cambiar, pero todos los datos parecen indicar que la composición del voto de Vox es muy parecida a la del electorado conservador tradicional. Al menos por ahora, podemos decir que Vox es más una escisión radical del electorado del Partido Popular que un partido de nueva derecha populista al uso. Por lo que la idea del voto a Vox por parte de trabajadores poco cualificados y ex votantes de partidos de izquierda debería quedar (repito: al menos por ahora) en stand by.
 
   </article>
 </section>
@@ -143,15 +147,9 @@
     
       <div class="sns-shares sp-sns-shares">
         
-          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=%2fpost%2f2018-12-26-vox-derecha-radical%2f&ref_src=twsrc%5Etfw&text=Vox%2c%20nueva%20derecha%20populista%20o%20escisi%c3%b3n%20radical%20del%20PP H%c3%a9ctor%20Meleiro&tw_p=tweetbutton&url=%2fpost%2f2018-12-26-vox-derecha-radical%2f"><i class="fab fa-twitter"></i></a>
-        
-        
-          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=%2fpost%2f2018-12-26-vox-derecha-radical%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
         
         
         
-        
-          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=%2fpost%2f2018-12-26-vox-derecha-radical%2f"><i class="fab fa-linkedin"></i></a>
         
       </div>
     
@@ -165,20 +163,12 @@
 <div class="fixed-bar">
   <section class="container">
     
-      <p id="privateTriggerText">¿Te interesa este contenido?→<a id="privateTrigger">Click!</a></p>
-    
     
       <div class="sns-shares pc-sns-shares">
         
-          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=%2fpost%2f2018-12-26-vox-derecha-radical%2f&ref_src=twsrc%5Etfw&text=Vox%2c%20nueva%20derecha%20populista%20o%20escisi%c3%b3n%20radical%20del%20PP H%c3%a9ctor%20Meleiro&tw_p=tweetbutton&url=%2fpost%2f2018-12-26-vox-derecha-radical%2f"><i class="fab fa-twitter"></i></a>
-        
-        
-          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=%2fpost%2f2018-12-26-vox-derecha-radical%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
         
         
         
-        
-          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=%2fpost%2f2018-12-26-vox-derecha-radical%2f"><i class="fab fa-linkedin"></i></a>
         
       </div>
     
@@ -191,17 +181,6 @@
     
 
   <script src="/js/app.js"></script>
-  
-  <script>
-  (function($) {
-    $(function() {
-      $('#privateTrigger').on('click', function() {
-        $('.private').slideToggle();
-        $('#privateTriggerText').text("Compartelo en estos botones→");
-      });
-    });
-   })(jQuery);
-  </script>
   
   </body>
 </html>
